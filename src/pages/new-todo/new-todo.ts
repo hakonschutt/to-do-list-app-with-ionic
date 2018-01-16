@@ -14,5 +14,6 @@ export class NewTodoPage {
 
   onAddToDo( value: { title: string } ){
     this.todoService.addTodo(value);
+    this.navCtrl.pop();
   }
 }
