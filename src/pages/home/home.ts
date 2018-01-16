@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { NavController } from 'ionic-angular';
+import { NewTodoPage } from '../new-todo/new-todo';
 
 @Component({
   selector: 'page-home',
@@ -11,7 +12,7 @@ export class HomePage {
 
   }
 
-  onLoadNewPlace(){
-    this.navCtrl.push(NewToDoPage);
+  onLoadNewToDoPage(){
+    this.navCtrl.push(NewTodoPage);
   }
 }
