@@ -11,5 +11,7 @@
   </ion-navbar>
 </ion-header>
 <ion-content padding>
-
+  <ul>
+    <li *ngFor="let todo of todos">{{ todo.value }}</li>
+  </ul>
 </ion-content>

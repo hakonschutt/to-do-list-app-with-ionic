@@ -1,11 +1,11 @@
 export class ToDoService {
   private todos: { title: string }[] = [];
 
-  addToDo(todo: {title: string}){
+  addTodo(todo: {title: string}){
     this.todos.push(todo);
   }
 
-  getToDos(){
+  getTodos(){
     return this.todos.slice();
   }
 }

@@ -11,7 +11,7 @@
   <form (ngSubmit)="onAddToDo(f.value)" #f="ngForm">
     <ion-item>
       <ion-label>Title</ion-label>
-      <ion-input type="text" ngModel [ngModelOptions]="{standalone: true}" required></ion-input>
+      <ion-input type="text" ngModel name="value" required></ion-input>
     </ion-item>
     <button ion-button block type="submit" margin-top [disabled]="!f.valid">Add to-do</button>
   </form>

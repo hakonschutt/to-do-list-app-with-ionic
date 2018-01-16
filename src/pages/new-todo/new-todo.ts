@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import { NavController } from 'ionic-angular';
 import { ToDoService } from '../../services/todo.service';
 
 @IonicPage()
@@ -9,10 +9,10 @@ import { ToDoService } from '../../services/todo.service';
 })
 export class NewTodoPage {
 
-  constructor(private todoService: ToDoService) {
+  constructor(private todoService: ToDoService, private navCtrl: NavController) {
   }
 
   onAddToDo( value: { title: string } ){
-    this.todoService.addToDo(value);
+    this.todoService.addTodo(value);
   }
 }

@@ -15,7 +15,7 @@ export class HomePage {
   }
 
   ionViewWillEnter(){
-    this.todos = this.todoService.getToDos();
+    this.todos = this.todoService.getTodos();
   }
 
   onLoadNewToDoPage(){
