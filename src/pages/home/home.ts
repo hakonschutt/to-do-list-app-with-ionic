@@ -11,4 +11,7 @@ export class HomePage {
 
   }
 
+  onLoadNewPlace(){
+    this.navCtrl.push(NewToDoPage);
+  }
 }
