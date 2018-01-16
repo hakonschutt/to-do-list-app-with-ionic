@@ -1,12 +1,6 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
-
-/**
- * Generated class for the NewTodoPage page.
- *
- * See https://ionicframework.com/docs/components/#navigation for more info on
- * Ionic pages and navigation.
- */
+import { ToDoService } from '../../services/todo.service';
 
 @IonicPage()
 @Component({
@@ -15,11 +9,10 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
 })
 export class NewTodoPage {
 
-  constructor(public navCtrl: NavController, public navParams: NavParams) {
+  constructor(private todoService: ToDoService) {
   }
 
-  ionViewDidLoad() {
-    console.log('ionViewDidLoad NewTodoPage');
+  onAddToDo( value: { title: string } ){
+    this.todoService.addToDo(value);
   }
-
 }
