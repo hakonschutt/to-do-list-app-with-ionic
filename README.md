@@ -1,3 +1,5 @@
+[![npm version](https://d25lcipzij17d.cloudfront.net/badge.svg?id=js&type=6&v=5.6.0&x2=0)](https://badge.fury.io/js/ionic-angular)
+
 # To do list app with Ionic :heavy_check_mark:
 
 #### To do app created to prepare for subject with mobil app frameworks
